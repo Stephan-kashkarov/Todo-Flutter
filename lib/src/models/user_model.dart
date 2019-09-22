@@ -15,7 +15,7 @@ class UserModel {
 		this.bio = "";
 		this.email = "";
 		this.passhash = Password.hash(password, new PBKDF2());
-		this.createdAt = DateFormat('HH:mm:ss | dd.MM.yyyy').format(new DateTime.now())
+		this.createdAt = DateFormat('HH:mm:ss | dd.MM.yyyy').format(new DateTime.now());
 	}
 
 	bool checkPassword (password) {
